@@ -2,9 +2,8 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="generator" content="pandoc">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-        <title></title>
+        <title>MOBILE APPS DISTRIBUTIONS</title>
         <style type="text/css">
 /*@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);*/
 
@@ -387,41 +386,144 @@ hr.single {
   color: #A0A0A0;
 
 }
-.bold {
+.BOLD {
   font-weight: bold;
 }
-.italic {
+.ITALIC {
   font-style: italic;
 }
-.underline {
+.UNDERLINE {
       text-decoration: underline;
 }
-.strikethrough {
+.STRIKETHROUGH {
   text-decoration: line-through;
 }
 
+.image {
+    display: inline-block;
+    text-align: center;
+    border: black;
+    border-style: solid;
+    border-width: thin;
+    padding: 3px;
+}
+
+.error {
+    color: rgb(80, 0, 0);
+    background-color: rgb(255, 224, 224);
+    font-size: small;
+    border-style: dotted;
+    border-width: thin;
+    font-weight: bold;
+}
+
+.warn {
+    color: rgb(0, 0, 80);
+    background-color: rgb(224, 224, 255 );
+    font-size: small;
+    border-style: dotted;
+    border-width: thin;
+    font-weight: bold;
+}
+
+/** list items */
+.list-item-none {
+    list-style-type: none;
+}
+.list-item-square {
+    list-style-type: square;
+}
+.list-item-circle {
+    list-style-type: circle;
+}
+
+sup {
+    vertical-align: super;
+}
+
+sub {
+    vertical-align: sub;
+}
+
+.SCMD {
+    font-weight: bold;
+    color: blue;
+}
+.SCOMMENT {
+    font-style: italic;
+    color: gray;
+    font-size: small;
+    
+}
+.SCONST {
+    font-weight: bold;;
+    color: #005000;
+    font-style: italic;
+}
+.SKEY {
+    color: #5050FF;
+}
+.SKEY1 {
+    color: blueviolet;
+}
+.SKEY2 {
+    color: #500000;
+}
+.SNUMBER {
+    color: #808000;
+    font-weight: bold;;
+}
+.SOPER {
+    font-weight: bold;;
+    color: darkgreen;
+}
+.SSTRING {
+    color: darkgreen;
+}
+#footer {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    opacity: 0.3;
+    
+}
+#head {
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    opacity: 0.3;
+    
+}
+#tail {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    opacity: 0.3;    
+    display: none;
+    
+}
         </style>
     </head>
-    <body pippo="eccomi&amp;">
+    <body >
+        <div id="head"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAA+CAYAAADd977FAAAABmJLR0QA/wD/AP+gvaeTAAAEa0lEQVR4nO3cS4gcRRzH8c8mq7uJjxwESXwhXlY8CIoXg4iXiA9EkQi+X2hQQQ0iiHgxnpQQPKwoUSMKapDE4OsgimIiwRcbDaIRX3E1Jj43rtHdxBjXQ+3o2tMz0zPd091m+gt12N6q+v+3f9td9f9XdfFf5uF2rMcYpqrSlTKGN3AzDtKAM7CjBM72WtmO06JiLMRkCZzr1TI5rYE+zMUWHBNVqSJXtmGoHzeIF2MXvsbuPL3qAQaF+31I5PpRuB42qn+EHsZAfj72HIN4VP193wDjkYs7VWLkwYD6ez9GvUrvF+RgL/KByP2fFVPpr1xd6m32RS/ECVJRIJUgJaMSpGRUgpSMSpCS0Z+i7fk4NUG9B4WIPy2zcQcObVHvF9yb0tYQrklQ7yl8mNJWHdE4ZCRhu+GYtnFlsyYp5jZYkdDeaAa2zkloa3FKOyPRPvN4ZZ2IR1L2cRVuy8CX0pPXGHIJlnbY9mQ8lKEvpSbPQX25sAjWDofhWczJ3JuSkqcg/XgGRyesPxurcWy3HCojeU97D8fzkv3H341FXfWmhBQRh5yElS3qLMZdOfhSOooKDK/Akga/OwGPCcvLPUeRkfoD6ndbzMM69cubPUORghyANThi+uc+PCFEyT1L0bms+YIoB+JOIR3T06TJZWXFQqzF2UU7UgbKIAicV7QDZSGPV9bPGfXzz66M/Zk8BLkIezLo5x7JM9H/W/IQ5B3cmrKPdViWgS+lJ68xZCVOwXUdtN2Cq4VXVhZcKQSfzTguYV+XCX9XMz7DqoT9ofsLVHOn6w8IT0s7u8LHcfwMm68kaNNqgWoBtrbpR6dlFEc28aWQBaoae4Qc1Q8J608JC1OfZOzHDiFp+X3G/UYZE1Yev22nUd6B4Te4EHsT1F2O57rkx+fCVPu3LvU/gXPxUbsNi4jUNwqbFZrxshC5d5P3cAH+yLjfP3Ex3u6kcVGpk/uFvFUcXwqDZR57jF8TdpdkNWGAm/Bip42LzGXdiE2RaxPCKy3PAPBp2T2Ny6Tc0FGkIJPCzf9pxrUlwrahvLlPeGrTMCyscqYmr2lvIxYJ793hBDazmPY2opb+72R6u1bYA9AuddPeMiQXXxUCvzUF+zElBK7zcWYb7d7E5WK+9eiEotdDajwpm3xXWvYKsVJ0bGvEZmH6nNmHsWURpEzswln4tEW9USHwG8/SeCVIPD8KN7tRNF+LwrdnbbgSpDFfCNF2NJr/XVjd/LgbRitBmjMirPPXxrdaFP5utwxWgrTmdSGa34dr8VI3jaWZ9r4gnM/RiiSJxKSsEtIdzfg1Q3s1VuMrvNWFvuvoNDCsSE+h6yEVCagEKRmVICWjEqRkVIKUjDhBKpHyIzZlH3eA2WCOTvUqczQ4wKw64i9/BvG4+vu+oU/4IH9FTKNJYQ9TRfYsEP/h69LqmNjysA1Ds4SdHpeqjoMtkt1CFnli5sXT8Z189rxW5d+y1fSp1nEcLHw6sF6YbRXt7P5adgqH8d8iMpb8DYvPLJbrxvEBAAAAAElFTkSuQmCC" /></div>
         <h1>MOBILE APPS DISTRIBUTIONS</h1>
-<hr class='double' />
+<hr class="undefined" /><ul>
+<li class="list-item-none" ><a href="#TIT_1" >iPhome (iOS)</a></li>
 <ul>
-<li type="circle" ><a href="#titId1">iPhome (iOS)</a></li><ul>
-<li type="circle" ><a href="#titId2">iOS Joya Mobile</a></li><li type="circle" ><a href="#titId3">iOS Joya Mobile DEMO</a></li></ul>
+<li class="list-item-none" ><a href="#TIT_2" >iOS Joya Mobile </a></li>
+<li class="list-item-none" ><a href="#TIT_3" >iOS Joya Mobile DEMO</a></li>
+</ul>
+</ul>
+<h1><span id="TIT_1" />iPhome (iOS)</h1>
+<h2><span id="TIT_2" />iOS Joya Mobile </h2>
+<ul>
+<li class="list-item-circle" ><span class='BOLD'>iOS Joya  <span class='ITALIC'>Ver1.0.26</span></span> <a href="itms-services://?action=download-manifest&url=https://github.com/datalogicsrl/mobile-distribution/raw/master/Joya.pid" >DOWNLOAD</a></li>
+</ul>
+<h2><span id="TIT_3" />iOS Joya Mobile DEMO</h2>
+<ul>
+<li class="list-item-circle" ><span class='BOLD'>iOS Joya Demo <span class='ITALIC'>Ver1.0.34</span></span> <a href="itms-services://?action=download-manifest&url=https://github.com/datalogicsrl/mobile-distribution/raw/master/JoyaDemo.pid" >DOWNLOAD</a></li>
 </ul>
 
-
-<h1><span id="titId1">iPhome (iOS)</span></h1>
-<h2><span id="titId2">iOS Joya Mobile</span></h2>
-<ul>
-<li type="circle" ><b>iOS Joya  <i>Ver1.0.25</i></b> <a href="itms-services://?action=download-manifest&url=https://github.com/datalogicsrl/mobile-distribution/raw/master/Joya-1.0.25.pid">DOWNLOAD</a></li></ul>
-
-
-<h2><span id="titId3">iOS Joya Mobile DEMO</span></h2>
-<ul>
-<li type="circle" ><b>iOS Joya Demo <i>Ver1.0.33</i></b> <a href="itms-services://?action=download-manifest&url=https://github.com/datalogicsrl/mobile-distribution/raw/master/JoyaDemo-1.0.33.pid">DOWNLOAD</a></li></ul>
-
-
-
+        <div id="tail">/</div>
     </body>
 </html>
