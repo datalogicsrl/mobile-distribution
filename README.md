@@ -4,9 +4,11 @@
 
 ## iOS Joya Mobile 
 
-[iOS Joya  Ver1.0.26](itms-services://?action=download-manifest&url=https://github.com/datalogicsrl/mobile-distribution/raw/master/Joya.pid)
+- <a href="itms-services://?action=download-manifest&url=https://github.com/datalogicsrl/mobile-distribution/raw/master/Joya.pid" >[iOS Joya  Ver1.0.26]</a>
 
 ## iOS Joya Mobile DEMO
 
-* [iOS Joya Demo Ver1.0.34](itms-services://?action=download-manifest&url=https://github.com/datalogicsrl/mobile-distribution/raw/master/JoyaDemo.pid)
+-  <a href="itms-services://?action=download-manifest&url=https://github.com/datalogicsrl/mobile-distribution/raw/master/JoyaDemo.pid" >[iOS Joya Demo Ver1.0.34]</a>
+
+
 
